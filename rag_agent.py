@@ -45,7 +45,7 @@ def document_process(path):
     Embeddings = GoogleGenerativeAIEmbeddings(model="gemini-embedding-2-preview")
 
 
-    ## store Embeddins into vector store :-
+    ## store Embeddings into vector store :-
     vector_Database = InMemoryVectorStore.from_documents(
         documents=docs_chunk, 
         embedding=Embeddings
