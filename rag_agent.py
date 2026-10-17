@@ -77,6 +77,7 @@ def document_process(path):
 
     agent_memory = InMemorySaver()
 
+    
     rag_agent = create_agent(
         model=llm,
         tools=[retriever_tool],
